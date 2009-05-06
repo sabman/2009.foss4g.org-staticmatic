@@ -1,0 +1,510 @@
+Workshop_1:
+  Title: "Geospatial BI with FOSS: an introduction to GeoMondrian and Spatialytics"
+  User: Advanced User
+  Instructors:
+    Thierry Badard – Quebec City, QC, Canada - SRID=4326;POINT(46.782536 -71.270199)
+    Etienne Dubé – Quebec City, QC, Canada - SRID=4326;POINT(46.782536 -71.270199)
+  Short_Description:
+    This workshop offers a practical introduction to two new Open Source projects in the Geospatial Business Intelligence field: GeoMondrian, a Spatial OLAP server based on Mondrian (Pentaho Analysis Services), and Spatialytics, a web-mapping client for building Geo BI solutions (dashboards and web Spatial OLAP clients) based on OpenLayers.
+  Long_Description:
+    Open Source Business Intelligence (BI) software has begun permeating the market thanks to offers from companies such as Pentaho, Jaspersoft, Talend and Spago Solutions. Geospatial BI, combining GIS and BI technologies, has recently stirred marked interest for the huge potential of combining spatial analysis and map visualization with proven BI tools and techniques such as data warehousing, Online Analytical Processing (OLAP) and data mining. It is in this perspective that we, the GeoSOA Research Group at Laval University, started to work on integrating geospatial functionality in existing open source BI software. This has led to the release of GeoKettle, a spatial ETL tool based on Pentaho Data Integration (Kettle) and targeted for analytic data warehousing, and more recently GeoMondrian, a Spatial OLAP server which extends the open source Mondrian OLAP server with GIS data types and functions. On the client side, Spatialytics has been developed, initially during a Google Summer of Code project mentored by Dr. Thierry Badard under the umbrella of the OSGeo and later as part of works within our research group. Spatialytics provides a client visualization component for Spatial OLAP data, using GeoMondrian as a data source and OpenLayers as the web mapping front-end. It enables the creation of drillable, interactive thematic maps based on multidimensional OLAP cubes and can be embedded in Geo BI web applications such as geo-analytical dashboards.
+    This workshop proposes a practical introduction to GeoMondrian and Spatialytics. A short intro to the fundamental concepts of data warehousing and OLAP will be part of the program, so deep knowledge of this field is not required to participate. From an already constructed spatial data warehouse, the attendees will learn how to build a cube schema, which is a relational-to-multidimensional mapping used by Mondrian (and by extension GeoMondrian) for querying the relational data warehouse (in SQL) by the means of multidimensional MDX queries. The users will then have a chance to issue simple queries on this cube, with focus given on the geospatial extensions to MDX offered by GeoMondrian. Finally, the attendees will experiment with Spatialytics, for the visualization of the cube’s data using its spatial dimensions. This will also demonstrate its integration in the familiar OpenLayers web mapping client, with easy to use navigation widgets for drilling across the cube’s hierarchical presentation of data and configurable choice of thematic mapping styles. At the end, the attendees should have a working knowledge of GeoMondrian and Spatialytics, in order to build rich Geo BI applications.
+  User_Prerequisites:
+    Good knowledge of SQL and Simple Feature for SQL geospatial extensions (e.g. PostGIS)
+    Basic knowledge of OpenLayers
+    Knowledge of data warehousing and OLAP (MDX language) is an asset but is not required
+  Biography:
+    Dr. Thierry Badard is professor in geoinformatics at the Department of geomatics sciences of Laval University in Quebec City (Canada). He heads the GeoSOA research group and is a full time researcher and a member of the steering committee of the Centre for Research in Geomatics (CRG). He is also a regular researcher of the GEOIDE Network of Centres of Excellence in geomatics. He has more than 13 years of experience and he has been involved and has led national and international R & D projects of importance. His research interest deals with geospatial (Web) Services Oriented Architectures (SOA), location-based and context-aware web services, geospatial Business Intelligence and geo-analytical tools and the design of intelligent mobile applications for better decision support. Dr. Thierry Badard is also involved in the geospatial free and open source community. He is administrator and project coordinator of the GeOxygene, GeoKettle, GeoMondrian and Spatialytics open source projects. He is an OSGeo charter member and acts as a member of the OSGeo conference committee. He is in charge of the free software commission in the OSGeo Francophone local chapter and he co-chairs the OSGeo Quebec local chapter. He is also a co-chair of the ICA (International Cartographic Association) working group on open source geospatial technologies.
+  Room: G04
+  Capacity: 120
+  Start_Time: 20-10-2009 0900
+  End_Time: 20-10-2009 1200
+    
+Workshop_2:
+  Title: Getting Started with MapServer
+  User: Beginner User
+  Instructors:
+    Jeff McKenna – Ottawa, ON, Canada – 45.411879,-75.700644
+    Tyler Mitchell – Ottawa, ON, Canada – 45.411879,-75.700644
+    Pericles Nacionales – Ottawa, ON, Canada – 45.411879,-75.700644
+  Short_Description:
+    This hands-on workshop is intended as an introduction to Web mapping with the University of Minnesota MapServer. The participants will go through the process of setting up a MapServer environment which includes configuring a Web server, creating a MapServer application, and adding spatial data.
+  Long_Description:
+    This hands-on workshop is intended as an introduction to Web mapping with the University of Minnesota MapServer. The participants will go through the process of setting up a MapServer environment which includes configuring a Web server and creating a MapServer application. The creation of a MapServer application will include step-by-step examples of building a map file, including defining the WEB object, the LAYER objects, and assigning symbology to these objects. Once a map file is created, the participants will then go through the process of creating a web-based interface.
+    Important MapServer and Web mapping concepts will be discussed throughout the workshop. A significant portion of the workshop will involve accessing data from several different data types and incorporating them into a MapServer map file. 
+  User_Prerequisites:
+    Some familiarity with the Windows operating system.
+  Biography:
+    In 2008 Jeff started his own consulting company based around FOSS4G, Gateway Geomatics, and is actively contributing to OSGeo.
+    Founding and Charter member of OSGeo
+    Maintainer for Maptools.org
+    Developer for MS4W
+    Developer for OSGeo4W
+    MapServer Project Steering Committee (PSC) member
+    MapServer documentation lead
+    OSGeo FOSS4G conference committee chair
+    FOSS4G Workshop committee member
+    founding co-chair of OSGeo Ottawa Local Chapter 
+  Room: G03
+  Capacity: 50
+  Start_Time: 20-10-2009 0900
+  End_Time: 20-10-2009 1200
+  
+Workshop_3:
+  Title: Introduction to PostGIS
+  User: Beginner User
+  Instructors:
+    Mark Leslie – Sydney, NSW, Australia - 33.86069S 151.182612E
+    Paul Ramsey – Victoria, BC, Canada – 48.428859,-123.367195
+  Short_Description:
+    A hands-on introduction to PostGIS Spatial extensions for PostgreSQL.  Participants will be given an overview of PostgreSQL RDBMS and taken through the installation of PostgreSQL and PostGIS, configuration, data loading and access. Working examples will be used to demonstrate the relational and analytical capabilities of PostGIS.
+  Long_Description:
+    This workshop will include a short instructional component in addition at the hands-on work.  You will follow the instructor through a series of tasks starting with the installation of PostgreSQL and PostGIS, configuration and basic tuning of the system, creating databases and  users and loading spatial data into the database.  From there a number of problems will be posed that will walk you through vital concepts such as spatial indices, spatially enabled queries and query tuning as well as visualization of data.
+  User_Prerequisites:
+    Users are expected to be familiar with SQL statements and basic relational database concepts.  They should be comfortable with command line tools in a Windows environment.
+  Biography:
+    Mark Leslie has broad experience integrating Proprietary and Open Source products into customer infrastructures. He has developed and extended software across the Open Source Geospatial stack, including UMN MapServer, PostGIS, uDig and GeoTools and is now Software Architect at LISAsoft.
+  Room: G01
+  Capacity: 45
+  Start_Time: 20-10-2009 0900
+  End_Time: 20-10-2009 1200
+  
+Workshop_4:
+  Title: "Introduction to the Open GeoStack: PostGIS, GeoServer, GeoWebCache, and OpenLayers"
+  User: Beginner User or Developer
+  Instructors:
+    Justin Deoliveira – New York, NY, USA – 40.74,-74.01
+    Andrea Aime – New York, NY, USA – 40.74,-74.01
+    Paul Ramsey – Victoria, BC, Canada – 48.428859,-123.367195
+    Tim Schaub – Bozeman, MT, USA – 45.69N,111.04W
+  Short_Description:
+    This workshop provides a hands-on introduction to the “OpenGeo Stack”, comprised of PostGIS, GeoServer, GeoWebCache, and OpenLayers. Workshop attendees will work through exercises targeted at building up a complete web mapping solution from scratch.
+  Long_Description:
+    "The workshop will begin with an introduction of the stack, providing an overview of each of the major components:
+    PostGIS: A spatially enabled relational database based on PostgreSQL. PostGIS is the backbone of many open source and non-open source based GIS systems.
+    GeoServer: A feature rich standards compliant server that connects information to the geospatial web. GeoServer reads a variety of spatial formats and publishes that data on the web through standard services and formats.
+    GeoWebCache: A WMS tile-caching library that provides an effective solution for the efficient serving of web maps.
+    OpenLayers: A web based mapping toolkit built on Ajax technology. OpenLayers provides a web based front end for a number of web mapping technologies such as WMS and WFS.
+    Following the introduction workshop attendees will begin the hands-on component. Exercises will cumulatively build off each other and work toward the goal of setting up a simple base map of the Manhattan area.
+    Initial exercises will focus on performing simple tasks with GeoServer such as publishing shapefiles, setting up styles for map visualization, and use of the map preview tool.
+    Once the basics of GeoServer have been covered attendees will be exposed to PostGIS. These exercises will focus on loading spatial data into PostGIS, as well as configuring GeoServer to connect to a PostGIS database.
+    With a functioning GeoServer setup on top of PostGIS focus will shift to the creation of the Manhattan base map. This section will focus mainly on map style configuration and exploring the capabilities of Styled Layer Descriptor (SLD) for the visualization of spatial data. 
+    Once the base map has been set up attendees will build a simple web based map using the OpenLayers library. This component involves some web scripting with JavaScript, in which attendees will learn how to visualize a GeoServer WMS with OpenLayers. Additionally some of the OpenLayers styling capabilities will also be explored.
+    The final part of the workshop will focus on GeoWebCache, using it to add tile-caching capabilities to the base map."
+  User_Prerequisites:
+    A passing familiarity with any of the stack components is beneficial. Workshop attendees should be familiar with interacting with web applications through the browser. Familiarity with the windows command line is also beneficial. Some JavaScript.
+  Biography:
+    Justin has been active in the open source community for a number of years. He is a charter member of the Open Source Geospatial Foundation (OSGEO), as well as a committer on projects such as GeoTools, GeoServer, and uDig. 
+  Room: G04
+  Capacity: 120
+  Start_Time: 20-10-2009 1300
+  End_Time: 20-10-2009 1600
+  
+Workshop_5:
+  Title: Making Maps Fast - Performance tuning and Tile Caching
+  User: Beginner Developer
+  Instructors:
+    Arne Kepp – Asker, Norway – 59.85,10.45
+    Jim Groffen – Adelaide, SA, Australia - -34.924434,138.598752
+  Short_Description:
+    Maps in apps. They look great and allow for user-intuitive functionality, but not if they are slow. This workshop will show how to make rendering maps and using spatial data as fast as it needs to be for a positive user experience. 
+  Long_Description:
+    "Speed of response is critical to a user experience. While hardware and platform considerations are briefly discussed, the focus of this workshop is on what can be done at the data level, the service level and especially caching. Participants will see how small changes in design and implementation can reap big benefits. The topics of the workshop include:
+    The Data: Spatial data stores. Attribute and spatial indexes.
+    The Map: Limiting what gets rendered. Image size vs. quality.
+    The Cache: Google does it, so can you.
+    The OS: Scalability and concurrency. Once we have data loaded into PostGIS and served by GeoServer we will move on to the main focus of the workshop: tile caching.
+    Installing TileCache.
+    Setting up your layer.
+    Configuring GeoWebCache in GeoServer. 
+    Metatiling.
+    How it works with HTTP, caching proxies and caching clients. OpenLayers will be used throughout the workshop to verify the effects of our changes." 
+  User_Prerequisites:
+    The focus of the workshop is mainly on spatial software configuration and installation. No knowledge of the software packages (PostGIS, GeoServer, TileCache, GeoWebCache, OpenLayers) is assumed, though a cursory understanding of spatial concepts would be helpful.
+  Biography:
+    Jim Groffen is a Senior Software Engineer at LISAsoft. Working in IT since 1998, Jim has been with LISAsoft since 2005 working on various Spatial projects. Jim participated in OGC projects such as CGDI-IP and OWS-6. As part of OWS-6 Jim will be contributing updated WMTS support to the TileCache open source project. Other relevant areas of interest include spatial catalogues and registries, OpenLS and all things Python.
+    Arne Kepp is a Software Engineer at OpenGeo and lead developer of GeoWebCache. He became a user and proponent of Open Source software while filling the role as system administrator for a GIS consulting firm in 2000. Since then he has been studying hardware architecture and used his experience to improve the performance and reliability of several web services.
+  Room: G05
+  Capacity: 30
+  Start_Time: 20-10-2009 1300
+  End_Time: 20-10-2009 1600
+  
+Workshop_6:
+  Title: OpenLayers - Your Foundation for Browser Based Mapping
+  User: Beginner User or Developer
+  Instructors:
+    Tim Schaub – Bozeman, MT, USA – 45.69N,111.04W
+    Roald de Wit – Melbourne, VIC, Australia - -37.81647,144.956102
+  Short_Description:
+    OpenLayers provides a full featured library for building browser based mapping applications. This workshop will guide participants through the library core, providing the experience necessary to build interactive mapping applications. We will cover best practices for dealing with a variety of raster and vector data sources, investigate client side styling, and discuss options for integrating OpenLayers with other JavaScript libraries.
+  Long_Description:
+    "OpenLayers provides a full featured library for building browser based mapping applications. This workshop will guide participants through the library core, providing the experience necessary to build interactive mapping applications. We will cover best practices for dealing with a variety of raster and vector data sources, investigate client side styling, and discuss options for integrating OpenLayers with other JavaScript libraries.
+    The hands-on workshop will include detailed exercises divided into five modules:
+    Map Basics - Understand how maps are created and configured.
+    Layer Types - Add data to your map from a variety of sources.
+    User Interaction - Set up controls to manage user interaction.
+    Editing & Styling - Focusing on vector data, read data from remote sources, allow for creation and editing of new data, and explore options for styling data client side.
+    Integration - OpenLayers provides the mapping core for your application. Build rich widgets with mapping functionality by integrating OpenLayers with other JavaScript libraries.
+    The modules will be presented by core OpenLayers developers who will be available for support throughout the workshop. Participants will be guided through exercises that result in working examples of a wide range of OpenLayers functionality. Printed materials will be provided that demonstrate advanced concepts in addition to workshop exercises. 
+    This year's materials will be a complete rewrite of previously presented workshops - including coverage of recently added functionality."
+  User_Prerequisites:
+    Participants will gain the most from the workshop if they have a good working knowledge of JavaScript and the basics of building web applications.  Participants with specific OpenLayers experience will have an opportunity to deepen their knowledge and will learn advanced tips for getting the most from the library.
+  Biography:
+    Tim Schaub is a senior geospatial developer with OpenGeo. He is a core contributor and serves on the Project Steering Committee for OpenLayers.
+    Roald is a software engineer/team lead for LISAsoft, a geospatial systems integration, software development and consulting company. His main area of expertise lies in the visualization of geospatial information through innovative and user friendly interfaces using web-based thin clients. 
+  Room: G02
+  Capacity: 45
+  Start_Time: 20-10-2009 0900
+  End_Time: 20-10-2009 1200
+  
+Workshop_7:
+  Title: Organizing your geospatial data and services using GeoNetwork opensource
+  User: Beginner User
+  Instructors:
+    Jeroen Ticheler – Enschede, The Netherlands – 52.223N, 6.885E
+    François Prunayre
+  Short_Description:
+    Participants will setup a catalogue to serve and access geospatial data through the Web. Topics that will be covered are the publishing of geospatial data, harvesting spatial data resources from remote catalogue-servers, finding and using spatial data through applications like News Readers and Google Earth and the integration of the publishing process in existing workflows.
+  Long_Description:
+    The half-day workshop will focus on the implementation of a catalogue to serve and access geospatial data through the Web. 
+    A local catalogue will be installed and configured. Harvesting of spatial data resources from remote servers will be configured and geospatial web map services will be set up using the embedded GeoServer and will be configured for access through the catalogue web interface. 
+    Participants will use the catalogue in different ways, including the web interface and OGC-CSW ISO, the new ebRIM CSW ISO, OAI-MHP and GeoRSS protocols. The user will learn how to use the catalogue to receive automatic updates when new resources of interest become available using news feeds in different client applications (news readers, Open Layers, Google Maps and Virtual Earth). The use of user feedback mechanisms including data rating and social book marking will be discussed.
+    Attention will be given to import and export functionality of the catalogue that allow integration of the publishing process in existing workflows like desktop GIS or operational data processing servers.
+  User_Prerequisites:
+      Basic understanding of geospatial web services (like OGC Web Map Services and Catalogue Services for the Web) is useful.
+  Biography:
+    "Jeroen Ticheler is passionate about Africa, people, maps and technology. He's convinced that open source software is the best option to help sustainable development. Making geospatial data more accessible caused him to start the development of GeoNetwork opensource in 2001 at the Food and Agriculture Organization of the UN, the first fully open source software in the organization. He has been pushing for geospatial data sharing within the United Nations for years as task group manager on interoperable services in the UN Geographic Information Working Group and pushed the concept of a UN Spatial Data Infrastructure in that same group. In 2008 he started GeoCat bv to provide commercial services for GeoNetwork opensource. In his nightlife he supports OSGeo activities, marketing and a hacking event."
+  Room: G03
+  Capacity: 50
+  Start_Time: 20-10-2009 1300
+  End_Time: 20-10-2009 1600
+  
+Workshop_8:
+  Title: Practical Introduction to GRASS and related software for beginners
+  User: Beginner User
+  Instructors:
+    "Paolo Zatelli – Trento, Italy - 46° 04' N,11° 08' E
+    Marco Ciolli – Trento, Italy - 46° 04' N,11° 08' E 
+    Clara Tattoni – Trento, Italy - 46° 04' N,11° 08' E"
+  Short_Description:
+    This workshop aims to overcome the initial barrier between GRASS and its potential users due to the steep learning curve. It has two parts: a brief GRASS overview and a hands-on session by the attendees. A custom live DVD with the software and the workshop documentation will be provided. 
+  Long_Description:
+    "GRASS is the leading FOSS GIS and its wide ranging analysis capabilities make it an ideal tool to set up environmental models, as well as to support land planning and management.
+    Therefore, GRASS can be an important tool in general for environmental researchers and in particular for scientists and planners in Developing Countries. In fact, GRASS has been already successfully used in many projects in Africa, Asia and Latin America. However, its steep learning curve makes the first approach to GRASS sometimes tricky for beginners: this workshop aims to overcome the initial barrier between GRASS and its potential users.
+    The workshop has two parts: a brief GRASS overview and a hands-on session by the attendees.
+    The aim is to allow the first users to understand the logic of the software and to experiment some significant, although necessarily limited, data elaboration for technical and environmental GIS applications. The workshop provides a brief introduction to GRASS and then it is structured as a step by step tutorial to guide beginners in the basic applications of the software, stressing the interoperability with other FOSS and proprietary software. The tutorial is structured in a growing difficulty level to make the participants gradually familiar with the software. It will be possible for the participants to follow different paths depending on their skills and interests."
+  User_Prerequisites: 
+    No particular prerequisites are required, being a beginners workshop, the Live DVD will run the GNU/Linux OS.
+  Biography:
+    "Paolo Zatelli,. PhD in Topographic and Geodetic Science, Assistant professor in Topography and Cartography at the University of Trento. Research and education: survey, statistics photogrammetry, numerical cartography and GIS, remote sensing.
+    Marco Ciolli, PhD in Forest Management, Assistant professor in Forest management and planning at the University of Trento. Research and education: sustainable landscape planning and development, applied GIS , ecology, tropical ecosystems. 
+    Clara Tattoni, PhD in Analysis, protection and management of biodiversity, is now cooperating with the University of Trento. Main research topic: GIS in wildlife management, forestry and ecology. She is part of the OSGeo educational committee."
+  Room: G02
+  Capacity: 45
+  Start_Time: 20-10-2009 1300
+  End_Time: 20-10-2009 1600
+  
+Workshop_9:
+  Title: Practical introduction to MapFish, the web 2.0 mapping application framework
+  User: Beginner User
+  Instructors:
+    "Claude Philipona – Lausanne, Switzerland - 46°32'N,06°38'E
+    Cédric Moullet – Lausanne, Switzerland - 46°32'N,06°38'E
+    Frédéric Junod – Lausanne, Switzerland - 46°32'N,06°38'E
+    Eric Lemoine – Chambéry, France - 45° 34′ N, 5° 54′ E"
+  Short_Description:
+    The goal of this workshop is to create a web mapping application from scratch by using the web 2.0 technology included in MapFish.  The usage of several widgets will be described. The server part of MapFish will also be introduced through practical examples. 
+  Long_Description:
+    "MapFish is an open-source development framework for building web-mapping applications. 
+    MapFish is based on the GeoExt library which is a combination of ExtJS and OpenLayers, and extends the Pylons general-purpose web development framework with geo-specific functionalities.  This workshop will introduce the usage of the MapFish development framework and will demonstrate how it can help developers implement rich web-mapping applications.   On the client side, several MapFish widgets and components will be presented:
+    The map panel for the representation of geographical information through OGC web services like WMS, WFS or TMS.
+    The toolbar for the access to the functions within the GUI
+    The layer tree for the organization and management of the geospatial layers
+    The 3D widget for the 3D representation of geographical data using Google Earth
+    The print widget for the creation of reports.
+    The geostat widget for the creation of advanced representations of the data through chloropleth or proportional symbols
+    The edit functions for the creation and update of data sets.
+    The search and recenter widget for advanced navigation within the data.
+    The query widget for getting information about the represented data 
+    The offline mode for allowing an usage of MapFish without Internet connection
+    The templating system for the definition of reusable GUI
+    On the server side, the following things will be practically introduced:
+    The creation of RESTful services for the data access and data manipulation. Usage of SQLAlchemy and Shapely will be highlighted.
+    The configuration of the print server component for the definition of reports.
+    The presentation of other development environment working together with MapFish: PHP, Java, Ruby on rails and the integration with Symfony"
+  User_Prerequisites:
+    Basic knowledge of JavaScript and python are required.
+  Biography:
+    Claude Philipona is co-founder of Camptocamp SA and professor at the University of Applied Sciences Western Switzerland (HES-SO).
+    Cédric Moullet is CTO Geospatial of Camptocamp SA and member of the GeoExt PSC.
+    Eric Lemoine is senior developer at Camptocamp France SAS and committer for MapFish, OpenLayers and GeoExt. Member of the GeoExt and OpenLayers PSC.
+    Fréderic Junod is developer at Camptocamp SA and committer for MapFish, OpenLayers and GeoExt.
+  Room: G01
+  Capacity: 45
+  Start_Time: 20-10-2009 1300
+  End_Time: 20-10-2009 1600
+  
+Workshop_10:
+  Title: Working with GeoServer
+  User: Beginner User
+  Instructors:  
+    Justin Deoliveira – New York, NY, USA – 40.74,-74.01
+    Andrea Aime – New York, NY, USA – 40.74,-74.01
+  Short_Description:
+    A hands-on introduction to GeoServer: a server that connects spatial information to the geospatial web. This workshop will provide a comprehensive introduction to GeoServer, covering topics from installation to more advanced features.
+  Long_Description:
+    GeoServer is a feature rich geospatial web server built on top of open standards. A Web Map Service, Web Feature Service, and Web Coverage Service, GeoServer is a technology built for publishing data on the geospatial web.
+    Initial exercises will focus mainly on basic tasks such as installation of GeoServer and the publishing of some simple data sets. Attendees will learn how to publish a variety of data sets in different formats. From Shapefiles, to a PostGIS spatial database, to raster data formats such as GeoTIFF.
+    Workshop exercises will focus mainly on the GeoServer WMS, and its cartographic capabilities. Workshop attendees will be given an introduction to the GeoServer styling engine (SLD), and work through some simple examples. More advanced features such as labelling options, raster symbolization, and dynamic symbolization will also be covered.
+    Later exercises will shift more toward GeoServer “geoweb” oriented capabilities such as KML output and Google Earth support. Initial exercises will illustrate how to publish data from GeoServer in Google Earth, moving to advanced features such as KML templates, 2.5 dimensional height support, and regionation.
+    Time permitting other topics covered may include tile caching with GeoWebCache, WMS optimization with paletted images, and image watermarking.
+  Biography:
+    Justin has been active in the open source community for a number of years. He is a charter member of the Open Source Geospatial Foundation (OSGEO), as well as a committer on projects such as GeoTools, GeoServer, and uDig. 
+  Room: G05
+  Capacity: 30
+  Start_Time: 20-10-2009 0900
+  End_Time: 20-10-2009 1200
+  
+Tutorial_1:
+  Title: A Friendly Hands-on Survey of Popular Geospatial Services
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    Jody Garnett – Sydney, Australia - 33°51′35.9″S 151°12′40″E
+    Mark Leslie – Sydney, Australia - 33°51′35.9″S 151°12′40″E
+    Andrea Antonello – Bolzano, Italy - 46.48227, 11.32868
+  Description:
+    Would you like to get started with free and open source software for geomatics? This workshop will get you started from the comfort of a desktop application! This workshop provides a survey of popular open source geospatial software allowing you to plan the rest of your week based on firsthand experience. The background of each project will be provided and you will have a chance to see how the different applications perform and what they are capable of.  The User-friendly Desktop Internet GIS (uDig) application is used to provide an introduction to geospatial concepts and ideas. The uDig application is integrated with the desktop experience with drag and drop support, features an embedded internet browser, and is available on a range of platforms.
+    For those new to the geospatial field we will cover how Features and Projections are used to draw your information onto a Map. We will also look into your enterprise needs ranging from use of PostGIS to working with simple Shapefiles. With access to more powerful data sources we will explore the range of styling and visualisation options.
+    Plenty of time will be set aside for questions – welcome to FOSS4G!
+  Biography:
+    Jody Garnett is the lead uDig architect and on the steering committee for GeoTools; GeoServer and uDig. Jody Garnett is an employee of LISAsoft with a background in training and mentoring.
+    Mark Leslie has broad experience at LISAsoft integrating proprietary and open source solutions. An active PostGIS committer he has developed and extended software across the Open Source Geospatial stack, including UMN MapServer, PostGIS, uDig and GeoTools. 
+    Andrea Antonello from HydroloGIS developers geospatial open source solutions for environmental analysis. Andrea is well known as the lead developer of the JGrass project and is part of the uDig project steering committee.
+  Room: G03
+  Capacity: 50
+  Start_Time: 21-10-2009 1300
+  End_Time: 21-10-2009 1430
+  
+Tutorial_2:
+  Title: Delivering data using published application schemas
+  Type: Hands On
+  User: Advanced User
+  Presenters:
+    Rob Atkinson – Wollongong, Australia - -34.425036,150.899792
+  Description:
+    This tutorial will introduce and explain the use and configuration of GeoServer with formal application schemas, such as those underpinning Spatial Data Infrastructures.
+    The tutorial will provide a step-by-step explanation of the functionality and usage of the application-schemas DataAccess module, brand new to GeoServer 2.x
+    Attendees will be encouraged to create their own configured installation of GeoServer 2.0.
+  Biography:
+    Rob Atkinson is a distributed systems architecture with a long-term interest in sustainability, and the need to integrate systems across multiple application domains. He is a co-author of the original OGC Web Map Server 1.0 specification, and has been involved in numerous other OGC specifications and data standards. Rob has been driving a long-term agenda to make GeoServer capable of delivering data within a Spatial Data Infrastructure.
+  Room: G02
+  Capacity: 45
+  Start_Time: 22-10-2009 1500
+  End_Time: 22-10-2009 1630
+  
+Tutorial_3:
+  Title: "Getting Started with MapWindow: An easy-to-install, easy-to-use free GIS for Windows"
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    Dan Ames – Idaho Falls, Idaho, USA -43.493, -122.035
+    Ted Dunsford – Idaho Falls, Idaho, USA -43.493, -122.035
+  Description:
+    MapWindow GIS (www.mapwindow.org) is a widely used free GIS for the Microsoft Windows operating system. With an easy-to-use installer and a number of plug-ins for geoprocessing, data manipulation, and visualization, MapWindow is an excellent GIS for a many applications. This tutorial will introduce novice GIS users to the MapWindow GIS application and several key plug-ins. A copy of the e-Book, “A Practical Look at MapWindow” which includes several introductory exercises will be supplied to attendees. Specific exercises that make use of the data from the Climate Change Integration Plugfest (CCIP) will be used during the tutorial.
+  Biography: Daniel P. Ames is an associate professor of Geosciences and Civil Engineering at Idaho State University – Idaho Falls where he directs the Geospatial Software Lab and leads the open source MapWindow GIS project. Dr. Ames has been an advocate of OSGeo since its inception and has actively participated in the OSGeo Journal effort, OSGeo Education Committee, FOSS4G 2006 (workshop presentation) and FOSS4G 2008 (booth sponsor and workshop and lab presented by Dr. Ames’ students). With a primary interest in developing programmer tools Windows platform, Dr. Ames’ GIS software projects have included work for many U.S. agencies and international collaborators. Ted Dunsford is a PhD Candidate in Engineering and Applied Sciences at ISU and will help deliver the workshop.
+  Room: G03
+  Capacity: 50
+  Start_Time: 22-10-2009 1030
+  End_Time: 22-10-2009 1200
+  
+  
+Tutorial_4:
+  Title: How to Cope with GeoSpatial - Intro to GeoTools for the Java Developer
+  Type: Hands On
+  User: Advanced Developer
+  Presenters:
+    Jody Garnett – Sydney, Australia - 33°51′35.9″S 151°12′40″E
+    Michael Bedward – Sydney, Australia - 33°51′35.9″S 151°12′40″E
+  Description:
+    "Are you new to GeoSpatial? Are you not cool enough to be a Neo-Geographer AJAX empowered meta tagging Ruby wunderkind ? Does scientific mumbo-jumbo make your head hurt? Are you (gasp!) just out to get the job done? Come to this tutorial and go home happy.
+    This Java tutorial is developers who are new to the GeoSpatial scene - it offers an introduction to concepts, projects, and how to avoid common pitfalls.
+    We will start with something nice, fun and visual - fetching content from Web Map Servers. The focus is on you and the code you need to get the job done.
+    We will explore what maps are made of: Features (literally things you can draw on a Map), Geometry (what to actually draw) and details like units and coordinate reference systems. These ideas are represented as nice normal Java objects by the GeoTools and Java Topology Suite projects.
+    We will work with common data formats and show how to make queries and modify information. For visualisation we will use a nice Swing widget and show how to control the rendering system with style.
+    Attend this tutorial - it will be very much hands on – and fun."
+  Biography:
+    Jody Garnett is the lead architect for the uDig project; and on the steering committee for GeoTools; GeoServer and uDig. Taking the roll of geospatial consultant a bit too literally Jody has presented workshops and training courses in every continent (except Antarctica). Jody Garnett is an employee of LISAsoft. 
+  Room: G03
+  Capacity: 50
+  Start_Time: 23-10-2009 1030
+  End_Time: 23-10-2009 1200
+  
+Tutorial_5:
+  Title: Introduction to deegree iGeoDesktop
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    "Hanko Rubach – Bonn, Germany - 50° 41' 12''N, 7° 8' 55''E"
+  Description:
+    iGeoDesktop is the brand-new desktop GIS component in the deegree project (http://deegree.org). It is based on established deegree technology and modular by design to allow for
+    flexible and use-case dependant configuration,
+    standards-based SDI integration, 
+    integration with other third-party desktop components.
+    In this hands-on tutorial participants will get to know basic usage patterns of the tool, along with an insight to configuration. Based on services and data which are being made available within the Climate Change Integration Plugfest, participants will learn how to use iGeoDesktop in order to integrate SDI resources from various sources (local data and OGC services like WCS, WFS and WMS), including resource metadata, map layout and basic analysis issues. The concept of an iGeoDesktop project will be introduced as a combined definition of geospatial contents, functions and tools available to the user, and overall layout. 
+  Biography:
+    Hanko Rubach holds a university degree in environmental sciences (University of Lüneburg, Germany, http://www.uni-lueneburg.de/fb4/). Since 2006 he is working as consultant with lat/lon GmbH in Bonn, Germany. Hanko is deeply involved in SDI projects where deegree components play an important role. Within the deegree project he was involved with preparing the 2.x releases where he made significant contributions to the quality management within the whole project. More specifically, he has been managing the demo packages production. 
+  Room: G02
+  Capacity: 45
+  Start_Time: 23-10-2009 1030
+  End_Time: 23-10-2009 1200
+  
+Tutorial_6:
+  Title: Leveraging OGC Services with GeoExt
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    "Andreas Hocevar – Graz, Austria - lat: 47° 4' N, lon: 15° 26' E"
+  Description:
+    "GeoExt is a pure JavaScript toolkit for building rich web-based GIS applications. Built upon ExtJS and OpenLayers, it supports all common proprietary and open data formats and maps, including many of the Open Geospatial Consortium's (OGC) specifications like Web Mapping (WMS), Web Feature (WFS) services, and Styled Layer Descriptor (SLD).
+    This tutorial will walk participants through the usage of the GeoExt widgets of a simple GIS application entirely based on OGC services. Available widgets include functionality for adding layers from arbitrary WMS servers, editing layer styles based on the SLD standard, and querying data using the WFS protocol. On-site data from the Climate Change Integration Plugfest (CCIP) will be used.
+    The target audience for this tutorial are decision makers and users interested in the state of the art of web-based GIS applications using open standards. In addition to seeing GeoExt in action, participants will gain an understanding of its modular design by browsing code snippets and making configuration changes. To make the latter a fun experience, some basic knowledge of JavaScript and/or JSON is beneficial."
+  Biography:
+    "Andreas is a core committer to MapBuilder, OpenLayers and GeoExt. Coming from an urban and regional planning background, he knows the requirements of maps and mapping applications for planners and governments. Improving the way users can apply design principles and good practices of cartography to open maps has been the driving force behind his efforts in FOSS4G, especially in building SLD support into OpenLayers and GeoExt. As a consultant for OpenGeo, he enjoys being part of an international team of experienced FOSS4G developers devoted to well established projects like GeoServer, PostGIS and OpenLayers."
+  Room: G02
+  Capacity: 45
+  Start_Time: 22-10-2009 1300
+  End_Time: 22-10-2009 1430
+  
+Tutorial_7:
+  Title: Making Maps Fast - Performance tuning and Tile Caching
+  Type: Hands On
+  User: Advanced Developer
+  Presenters:
+    Arne Kepp – Asker, Norway – 59.85,10.45
+    Jim Groffen – Adelaide, SA, Australia - -34.93,138.6
+  Description:
+    "Speed of response is critical to a user experience. While hardware and platform considerations are briefly discussed, the focus of this tutorial is on what can be done at the data level, the service level and especially caching. Participants will see how small changes in design and implementation can reap big benefits. The topics of the tutorial include:
+    The Data: Spatial data stores. Attribute and spatial indexes.
+    The Map: Limiting what gets rendered. Image size vs. quality.
+    The Cache: Google does it, so can you.
+    The OS: Scalability and concurrency.
+    Once we have data loaded into PostGIS and served by GeoServer we will move on to the main focus of the workshop: tile caching.
+    Installing TileCache.
+    Setting up your layer.
+    Configuring GeoWebCache in GeoServer. 
+    Metatiling.
+    How it works with HTTP, caching proxies and caching clients.
+    OpenLayers will be used throughout the workshop to verify the effects of our changes." 
+  Biography:
+    Jim Groffen is a Senior Software Engineer at LISAsoft. Working in IT since 1998, Jim has been with LISAsoft since 2005 working on various Spatial projects. Jim participated in OGC projects such as CGDI-IP and OWS-6. As part of OWS-6 Jim will be contributing updated WMTS support to the TileCache open source project. Other relevant areas of interest include spatial catalogues and registries, OpenLS and all things Python.
+    Arne Kepp is a Software Engineer at OpenGeo and lead developer of GeoWebCache. He became a user and proponent of Open Source software while filling the role as system administrator for a GIS consulting firm in 2000. Since then he has been studying hardware architecture and used his experience to improve the performance and reliability of several web services.
+  Room: G03
+  Capacity: 50
+  Start_Time: 22-10-2009 1030
+  End_Time: 22-10-2009 1200
+  
+Tutorial_8:
+  Title: Making Maps Pretty with Style Layer Descriptor
+  Type: Hands On
+  User: Advanced User
+  Presenters:
+    Andrea Aime – New York, NY, USA – 40.74,-74.01
+    Jim Groffen – Adelaide, SA, Australia - -34.924434,138.598752
+  Description:
+    "Tips and tricks to get your maps looking great. Supported by many GIS packages today, Styled Layer Descriptor (SLD) uncouples map styling from the mapping services. Learn how to make and apply SLD using freely available tools.
+    SLD is an OGC standard that allow users to define symbolisation and colouring of spatial data. During the tutorial participants learn the basics of SLD, and some tips and tricks:
+    SLD editing with uDig.
+    The GeoExt based SLD editor in GeoServer.
+    What you can do with SLD rules.
+    How filters control what gets styled.
+    Styling tricks.
+    Performance considerations.
+    The exercises performed build up a case for the benefits of SLD and the best practices for using it. There will also be an opportunity to compare SLD support in OpenJUMP, OpenLayers and other open source packages.
+    An information sheet on SLD support in existing GIS packages and a quick reference guide for both SLD and the Filter Encoding Specification will be provided."
+  Biography:
+    Jim Groffen is a Senior Software Engineer at LISAsoft. Working in IT since 1998, Jim has been with LISAsoft since 2005 working on various Spatial projects. Jim participated in OGC projects such as CGDI-IP and OWS-6. As part of OWS-6 Jim will be contributing updated WMTS support to the TileCache open source project. Other relevant areas of interest include spatial catalogues and registries, OpenLS and all things Python.
+  Room: G03
+  Capacity: 50
+  Start_Time: 23-10-2009 830
+  End_Time: 23-10-2009 1000
+  
+Tutorial_9:
+  Title: Protecting OGC Web Services with the 52°North Security System
+  Type: Hands On
+  User: Advanced User
+  Presenters:
+    Jan Drewnak – Muenster, Germany – 51.949979,7.660217
+  Description:
+    "After a brief introduction into the basic concepts of the 52°North security system solution, the participants will set up a scenario installation of the system to restrict access to an example Web Map Service.
+    Setting up the scenario implies:
+    Deployment and configuration of the WAS web application on an Apache Tomcat server
+    Deployment and configuration of the WSS web application on an Apache Tomcat server
+    Installation and configuration of the WSC desktop application
+    As part of the service configuration the participants will add users to the user repository for the WAS as well as define access policies for layers and/or operations of the protected WMS for the WSS.
+    After successful deployment and installation the protected service will be loaded into a web map client using different user profiles to visualize the effect of policy enforcement."
+  Biography:
+    From March 2003 until October 2005 Jan Drewnak worked as a research associate at the Institute for Geoinformatics, Muenster, Germany. He is engaged in the German regional initiative “Spatial Data Infrustructure North Rhine-Westfalia” (GDI NRW) as a security architect and engineer. Since May 2005 he works as software consultant and engineer for the con terra GmbH, Muenster, with focus on security in spatial data infrastructures. He also heads the 52°North Open Source Initiative’s “Security Community”.
+  Room: G02
+  Capacity: 45
+  Start_Time: 21-10-2009 1300
+  End_Time: 21-10-2009 1430
+  
+Tutorial_10:
+  Title: Sensor Web Enablement - Bringing Sensors into SDIs
+  Type: Hands On (optional)
+  User: Beginner User
+  Presenters:
+    Arne Broering – Muenster, Germany – 51.949979,7.660217
+    Simon Jirka – Muenster, Germany - 51.949979,7.660217
+    Chirstoph Stasch – Muenster, Germany – 51.943842,7.614212
+    Thomas Everding – Muenster, Germany – 51.943842,7.614212
+  Description:
+    This tutorial gives an introduction to the specification framework of OGC’s Sensor Web Enablement (SWE) initiative. The SWE framework offers a well-defined set of specifications which provide data models and corresponding data encodings as well as service interfaces to make use of the sensors. These interface specifications include services which can be utilized for example to access sensor data, to task sensors and to register for alerts in case of certain events.
+    Firstly, the tutorial will consist of a presentation to give an overview of the different SWE specifications. Afterwards, practical SWE use-cases and applications will be shown to demonstrate how SWE technology can be utilized. These demonstration scenarios range from water management, pollution monitoring, early warning systems to fire fighting applications. Finally, we will demonstrate the 52° North suite of SWE service and client implementations to show the current state of art in SWE software development. It is planned to demonstrate a set of existing SWE applications that are available on the Web. For the demonstration part it is recommended (although not necessary) to bring a laptop so that the participant will be able to make hands-on experiences with the presented SWE applications.
+  Biography:
+    Arne is working as a research associate for the Sensor Web and Simulation Lab (http://swsl.uni-muenster.de) at the University of Muenster. His research interests include middleware concepts for the Sensor Web, visualization of geodata (and especially sensor data) as well as the Human Sensor Web. He is as well an associated software developer of the open source initiative 52°North, an international R&D consortium based in Germany. Further on, Arne is strongly involved in the development of OGC’s Sensor Web Enablement standards. He is the current chair of the Sensor Observation Service working group.
+  Room: G02
+  Capacity: 45
+  Start_Time: 23-10-2009 830
+  End_Time: 23-10-2009 1000
+  
+Tutorial_11:
+  Title: Using ILWIS with its PostGIS plug-in for raster-vector applications
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    Rob Lemmens – Enschede, The Netherlands – 52.223N, 6.885E
+  Description:
+    "Tutorial objective: To provide participants a hands-on insight into the power of combining functionality of our user-friendly and highly functional GIS software with PostGIS. 
+    Our GIS software is ILWIS which has been developed over 15 years by ITC as closed source software and has a large user community in developing countries, and recently has been migrated to open source software. ILWIS comprises a complete package of image processing, spatial analysis and digital mapping. It is easy to learn and use; it has full on-line help, and has extensive tutorials for direct use in various disciplines.
+    Recent project efforts have migrated ILWIS into a modular, plug-in-based software, providing web-service support for OGC-based web mapping and links with other software such as PostGIS. ILWIS is being developed as a versatile geosoftware which is interoperable with other state-of-the-art open sources platforms. The development of this framework is done since 2007 in the context of 52°North (http://52north.org/).
+    We will demonstrate the software’s functionality with the help of a use case. The tutorial will take the participant on a comprehensive tour through an application developed for UN-Habitat, which enables local governments to register land ownership on the basis of satellite images and simple field sketches."
+  Biography:
+    Rob Lemmens is Assistant Professor Applied Computer Science in the Department of Geoinformation Processing at ITC. He has expertise and a publication record on GI open source projects, Internet GIS, Spatial Data Infrastructures and semantic modelling of distributed geo-webservices and ontology-based geo-information. Rob is ITC’s representative for the Open Geospatial Consortium (OGC) and community leader of the ILWIS open source GIS software at 52°North, where he coordinates project-based open source software development. He has initiated and participated in courses on interoperable web mapping around the world. He is project participant in the GEOSS open source for capacity building work package. 
+  Room: G03
+  Capacity: 50 
+  Start_Time: 22-10-2009 1500
+  End_Time: 22-10-2009 1630
+  
+Tutorial_12:
+  Title: Working with GRASS-GIS Vectors and Databases	
+  Type: Hands On
+  User: Beginner User
+  Presenters:
+    Richard Chirgwin - Sydney, Australia: -33.873 151.210
+  Description:
+    "The demonstrations will cover:
+    A brief outline of Grass-GIS
+    Basics of Grass-GIS vector-database connections
+    Buffering in Grass-GIS – producing border-constrained buffers
+    Simple command-line looping for bulk vector processing
+    Grass-GIS georectification processes.
+    This is the description of the tutorial as it will appear in the program. This is also the primary resource used to evaluate the tutorial for inclusion in the conference or for determining attendee interest."
+  Biography:
+    Richard Chirgwin is a telecommunications journalist and analyst, and is an associate consultant at Market Clarity. He has developed a strong interest in FOSS4G since 2006 when he first started working with Grass-GIS. In that time, Richard has applied Grass-GIS to a range of telecommunications infrastructure analysis problems, and in teaching colleagues the applications of Grass-GIS, he has become familiar with common problems and errors confronting the new user.
+  Room: G02
+  Capacity: 45
+  Start_Time: 22-10-2009 1030
+  End_Time: 22-10-2009 1200   
+  

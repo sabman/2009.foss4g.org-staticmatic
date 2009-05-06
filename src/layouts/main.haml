@@ -1,0 +1,43 @@
+
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      FOSS4G 2009 Conference, Sydney 20-23 October 2009
+    %link{ :href => "layout.css", :rel => "stylesheet", :type => "text/css" }
+    /
+      [if IE]>
+      <style type="text/css">
+      \/* place css fixes for all versions of IE in this conditional comment */
+      \.thrColElsHdr #sidebar1, .thrColElsHdr #sidebar2 { padding-top: 30px; }
+      \.thrColElsHdr #mainContent { zoom: 1; padding-top: 15px; }
+      \/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+      </style>
+      <![endif]
+    %script{ :src => "SpryAssets/SpryMenuBar.js", :type => "text/javascript" }
+    %link{ :href => "SpryAssets/SpryMenuBarVertical.css", :rel => "stylesheet", :type => "text/css" }
+  %body
+    #container
+      #header
+        %a{ :href => "index.html" }
+          %img{ :src => "images/logo.gif", :border => "0", :height => "200", :alt => "FOSS4G", :width => "600" }
+        /
+          end #header
+      = partial('sidebar1')    
+      = partial('sidebar2')
+
+      #mainContent        
+        = partial('site_wide_notice')      
+        = yield
+      /
+        end #mainContent
+      /
+        This clearing element should immediately follow the #mainContent div 
+        in order to force the #container div to contain all child floats
+      %br.clearfloat
+
+      = partial('footer')
+    /
+      end #container
+    = partial('google_analytics')    

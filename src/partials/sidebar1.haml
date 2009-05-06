@@ -1,0 +1,101 @@
+
+#sidebar1
+  %ul#MenuBar1.MenuBarVertical
+    %li
+      %a{ :href => "index.html", :title => "Home" }
+        Home
+    %li
+      %a{ :href => "./registration", :title => "Registration" }
+        Registration
+    %li
+      %a{ :href => "./sponsorship", :title => "Sponsorship" }
+        Sponsorship
+    %li
+      %a{ :href => "./schedule", :title => "Programme" }
+        Programme
+      %ul
+        %li
+          %a{ :href => "./schedule" }
+            Conference Schedule
+        %li
+          %a{ :href => "./speakers" }
+            Speakers
+        %li
+          %a{ :href => "./presentations" }
+            Presentations
+        %li
+          %a{ :href => "./workshops" }
+            Workshops
+        %li
+          %a{ :href => "./tutorials" }
+            Tutorials
+        %li
+          %a{ :href => "./posters" }
+            Posters
+        %li
+          %a{ :href => "./ccip" }
+            CCIP
+        %li
+          %a{ :href => "./activities" }
+            Events & Activities
+    %li
+      %a{ :href => "./submissions" }
+        Submissions Guide
+    %li
+      %a{ :href => "./sydney", :title => "Sydney" }
+        Sydney
+      %ul
+        %li
+          %a{ :href => "./venue" }
+            Venue
+        %li
+          %a{ :href => "./accommodation" }
+            Accommodation
+        %li
+          %a{ :href => "./general", :title => "General Information" }
+            General Information
+        %li
+          %a{ :href => "./visas", :title => "General Information" }
+            Visa Information
+    %li
+      %a{ :href => "./committee", :title => "Committee" }
+        Committee
+    %li
+      %a{ :href => "./contacts", :title => "Contacts" }
+        Contacts
+  #stayConnected
+    %h3
+      Stay Connected
+    %table{ :border => "0" }
+      %tr
+        %td
+          %a{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
+            %img{ :src => "images/Wiki_icon.gif", :border => "0", :height => "30", :alt => "Wiki", :align => "middle", :width => "30" }
+        %td
+          %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
+            Wiki
+      %tr
+        %td
+          %a{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
+            %img{ :src => "images/Mail_icon.gif", :border => "0", :height => "30", :alt => "Mailing List", :align => "middle", :width => "30" }
+        %td
+          %a.icontext{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
+            Mailing
+            list
+            %br
+      %tr
+        %td
+          %a{ :href => "http://flickr.com/FOSS4G" }
+            %img{ :src => "images/Flickr.png", :border => "0", :height => "30", :alt => "Flickr", :align => "middle", :width => "30" }
+        %td
+          %a.icontext{ :href => "http://flickr.com/FOSS4G" }
+            Flickr
+      %tr
+        %td
+          %a{ :href => "http://twitter.com/FOSS4G" }
+            %img{ :src => "images/Twitter_icon.gif", :border => "0", :height => "30", :alt => "Twitter", :align => "middle", :width => "30" }
+        %td
+          %a.icontext{ :href => "http://twitter.com/FOSS4G" }
+            Twitter feed
+
+        = partial('press_releases')    
