@@ -1,419 +1,96 @@
-!!!
-%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
-  %head
-    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
-    %title
-      FOSS4G 2009 Conference, Sydney 20-23 October 2009
-    %link{ :href => "styles/layout.css", :rel => "stylesheet", :type => "text/css" }
-    /
-      [if IE]>
-      <style type="text/css">
-      \/* place css fixes for all versions of IE in this conditional comment */
-      \.thrColElsHdr #sidebar1, .thrColElsHdr #sidebar2 { padding-top: 30px; }
-      \.thrColElsHdr #mainContent { zoom: 1; padding-top: 15px; }
-      \/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
-      </style>
-      <![endif]
-    %script{ :src => "SpryAssets/SpryMenuBar.js", :type => "text/javascript" }
-    %link{ :href => "SpryAssets/SpryMenuBarVertical.css", :rel => "stylesheet", :type => "text/css" }
-  %body
-    #container
-      #header
-        %a{ :href => "index.html" }
-          %img{ :src => "images/logo.gif", :border => "0", :height => "200", :alt => "FOSS4G", :width => "600" }
-        /
-          end #header
-      #sidebar1
-        %ul#MenuBar1.MenuBarVertical
-          %li
-            %a{ :href => "index.html", :title => "Home" }
-              Home
-          %li
-            %a{ :href => "./registration", :title => "Registration" }
-              Registration
-          %li
-            %a{ :href => "./sponsorship", :title => "Sponsorship" }
-              Sponsorship
-          %li
-            %a{ :href => "./schedule", :title => "Programme" }
-              Programme
-            %ul
-              %li
-                %a{ :href => "./schedule" }
-                  Conference Schedule
-              %li
-                %a{ :href => "./speakers" }
-                  Speakers
-              %li
-                %a{ :href => "./presentations" }
-                  Presentations
-              %li
-                %a{ :href => "./workshops" }
-                  Workshops
-              %li
-                %a{ :href => "./tutorials" }
-                  Tutorials
-              %li
-                %a{ :href => "./posters" }
-                  Posters
-              %li
-                %a{ :href => "./ccip" }
-                  CCIP
-              %li
-                %a{ :href => "./activities" }
-                  Events & Activities
-          %li
-            %a{ :href => "./submissions" }
-              Submissions Guide
-          %li
-            %a{ :href => "./sydney", :title => "Sydney" }
-              Sydney
-            %ul
-              %li
-                %a{ :href => "./venue" }
-                  Venue
-              %li
-                %a{ :href => "./accommodation" }
-                  Accommodation
-              %li
-                %a{ :href => "./general", :title => "General Information" }
-                  General Information
-              %li
-                %a{ :href => "./visas", :title => "General Information" }
-                  Visa Information
-          %li
-            %a{ :href => "./committee", :title => "Committee" }
-              Committee
-          %li
-            %a{ :href => "./contacts", :title => "Contacts" }
-              Contacts
-        #stayConnected
-          %h3
-            Stay Connected
-          %table{ :border => "0" }
-            %tr
-              %td
-                %a{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
-                  %img{ :src => "images/Wiki_icon.gif", :border => "0", :height => "30", :alt => "Wiki", :align => "middle", :width => "30" }
-              %td
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
-                  Wiki
-            %tr
-              %td
-                %a{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
-                  %img{ :src => "images/Mail_icon.gif", :border => "0", :height => "30", :alt => "Mailing List", :align => "middle", :width => "30" }
-              %td
-                %a.icontext{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
-                  Mailing
-                  list
-                  %br
-            %tr
-              %td
-                %a{ :href => "http://flickr.com/FOSS4G" }
-                  %img{ :src => "images/Flickr.png", :border => "0", :height => "30", :alt => "Flickr", :align => "middle", :width => "30" }
-              %td
-                %a.icontext{ :href => "http://flickr.com/FOSS4G" }
-                  Flickr
-            %tr
-              %td
-                %a{ :href => "http://twitter.com/FOSS4G" }
-                  %img{ :src => "images/Twitter_icon.gif", :border => "0", :height => "30", :alt => "Twitter", :align => "middle", :width => "30" }
-              %td
-                %a.icontext{ :href => "http://twitter.com/FOSS4G" }
-                  Twitter feed
-            %tr
-              %td{ :colspan => "2" }
-                %h3
-                  Press Releases
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_1" }
-                  1. Feb
-                  2008
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_2" }
-                  2. May
-                  2008
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_3" }
-                  3. Jan
-                  2009
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_4" }
-                  4. Jan
-                  2009
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_5" }
-                  5. Feb 2009
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_6" }
-                  6. Mar 2009
-            %tr
-              %td{ :colspan => "2" }
-                %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009_Press_Release_7" }
-                  7. Mar 2009
-      #sidebar2
-        %div{ :float => "left" }
-          %table
-            %td
-              %a{ :href => "index.html" }
-                %img.nounderline{ :title => "English", :src => "images/flags/us.png", :alt => "English" }
-            %td
-              %a{ :href => "index_pt.html" }
-                %img.nounderline{ :title => "Portuguese", :src => "images/flags/br.png", :alt => "Portuguese" }
-            %td
-              %a{ :href => "index_fr.html" }
-                %img.nounderline{ :title => "French", :src => "images/flags/fr.png", :alt => "French" }
-            %td
-              %a{ :href => "index_cn.html" }
-                %img.nounderline{ :title => "Chinese", :src => "images/flags/cn.png", :alt => "Chinese" }
-            %td
-              %a{ :href => "index_es.html" }
-                %img.nounderline_selected{ :title => "Spanish", :src => "images/flags/es.png", :alt => "Spanish" }
-            %td
-              %a{ :href => "index_de.html" }
-                %img.nounderline{ :title => "German", :src => "images/flags/de.png", :alt => "German" }
-            %td
-              %a{ :href => "index_jp.html" }
-                %img.nounderline{ :title => "japanese", :src => "images/flags/jp.png", :alt => "japanese" }
-          %table
-            %td
-              %a{ :href => "index_nl.html" }
-                %img.nounderline{ :title => "Dutch", :src => "images/flags/nl.png", :alt => "Dutch" }
-            %td
-              %a{ :href => "index_it.html" }
-                %img.nounderline{ :title => "Italian", :src => "images/flags/it.png", :alt => "Italian" }
-            %td
-              %a{ :href => "index_ko.html" }
-                %img.nounderline{ :title => "Korean", :src => "images/flags/kr.png", :alt => "Korean" }
-            %td
-              %a{ :href => "index_vi.html" }
-                %img.nounderline{ :title => "Vietnamese", :src => "images/flags/vi.png", :alt => "Vietnamese" }
-        %h3
-          Hosted by
-        %p
-          %a{ :href => "http://www.osgeo.org/" }
-            %img{ :src => "images/osgeo_logo2.gif", :border => "0", :alt => "OSGeo Logo" }
-        %p
-          %a{ :href => "http://www.osgeo.org/" }
-            The Open Source Geospatial Foundation
-          (OSGeo)
-          has been created to support and build the highest-quality open source geospatial
-          software. The foundation's goal is to encourage the use and collaborative development
-          of community-led projects, data development and education.
-        /
-          end #sidebar2
-        %h3
-          Charging Station Sponsor
-        %td
-          %a{ :href => "http://www.lisasoft.com/" }
-            %img{ :src => "images/sponsors/lisasoftFOSS4G_chrg_stn_160x61.png", :border => "0", :padding => "5" }
-        %h3
-          Bronze Sponsors
-        %td
-          %a{ :href => "http://www.geocat.net/" }
-            %img{ :src => "images/sponsors/GeoCat_160x33.png", :border => "0", :padding => "5" }
-        %td
-          %a{ :href => "http://lat-lon.de/" }
-            %img{ :src => "images/sponsors/logo-latlon160x115.png", :border => "0", :padding => "5" }
-        %td
-          %a{ :href => "http://mapgears.com/" }
-            %img{ :src => "images/sponsors/mapgears_rgb_transparent_160x97.png", :border => "0", :padding => "5" }
-        %h3
-          Media Sponsors
-        %table
-          %tr
-            %td
-              %a{ :href => "http://www.positionmag.com.au/" }
-                %img{ :src => "images/sponsors/Position Magazine160x48.JPG", :border => "0" }
-          %tr
-            %td
-              %a{ :href => "http://www.DirectionsMedia.NET/" }
-                %img{ :src => "images/sponsors/dme160x34.png", :border => "0" }
-          %tr
-            %td
-              %a{ :href => "http://www.asmmag.com/" }
-                %img{ :src => "images/sponsors/ASM Logo160x49.JPG", :border => "0", :padding => "5" }
-          %tr
-            %td
-              %a{ :href => "http://www.geoconnexions.org/" }
-                %img{ :src => "images/GeoInt.jpg", :border => "0", :padding => "5", :width => "160" }
-      #mainContent
-        .notice
-          %a{ :href => "registration/" }
-            Registrations
-          and Call for
-          %a{ :href => "./presentations/" }
-            Presentations
-          Now Open!
-        %h1
-          FOSS4G 2009 – Más que una conferencia internacional de
-          %i
-            software
-          libre geoespacial
-        %p
-          La conferencia para el
-          %i
-            software
-          libre geoespacial (FOSS4G) tendrá lugar del 20 al 23 de octubre de 2009 en Sydney, Australia.
-        %p
-          %a.external.free{ :href => "http://2009.foss4g.org", :title => "http://2009.foss4g.org", :rel => "nofollow" }
-            http://2009.foss4g.org
-        %p
-          Más allá de las reuniones de
-          %i
-            software
-          libre regionales, la conferencia FOSS4G ha renacido en los últimos años como un lugar de reunión e intercambio de problemas y oportunidades de ámbito internacional para expertos en tecnologías geoespaciales. Con temáticas que abarcan desde la integración de sistemas basados en
-          %i
-            software
-          libre y privativo, hasta la  creación de Infraestructuras de Datos Espaciales y la aplicación de estándares OGC, la conferencia ofrece una oportunidad única para aprovechar la riqueza en conocimiento y experiencia de los desarrolladores de
-          %i
-            software
-          libre, los patrocinadores y los profesionales de todo tipo.
-        %p
-          Los elementos de interés del FOSS4G 2009 incluyen:
-        %p
-          %b
-            Evento de integración sobre el cambio climático
-          \: FOSS4G lanzará el evento de integración de OGC sobre el cambio climático (CCIP), que demostrará la interoperabilidad basada en estándares entre aplicaciones geoespaciales basadas en
-          %i
-            software
-          libre y privativo. Consisten en la utilización de servidores en diferentes máquinas virtuales, cada uno con aplicaciones geoespaciales ofreciendo servicios
-          %i
-            web
-          basados en estándares. Habrá muchas oportunidades para revisar los diferentes componentes IDE, y charlar directamente con los proveedores e integradores acerca de la efectividad de las diferentes tecnologías y componentes.
-        %p
-          %a.external.free{ :href => "http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome", :title => "http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome", :rel => "nofollow" }
-            http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome
-        %p
-          %b
-            FOSS4G Live DVD
-          \: Se entregará a todos los asistentes un
-          %i
-            Live DVD
-          basado en el sistema operativo Xubuntu incluyendo
-          %i
-            software
-          libre geoespacial. Los usuarios podrán ejecturar el
-          %i
-            Live DVD
-          en sus computadoras y probar el
-          %i
-            software
-          sin necesidad de instalar nada en sus sistemas operativos.
-        %p
-          %a.external.free{ :href => "http://wiki.osgeo.org/wiki/Live_GIS_Disc", :title => "http://wiki.osgeo.org/wiki/Live_GIS_Disc", :rel => "nofollow" }
-            http://wiki.osgeo.org/wiki/Live_GIS_Disc
-        %p
-          %b
-            Fiesta de instalación
-          \: Antes de la sesión de la comida se llevará a cabo una fiesta de instalación que proporcionará a los asistentes la oportunidad de conocerse en una zona común e instalar una gran variedad de
-          %i
-            software
-          libre en sus portátiles, miniportátiles o cualquier otra máquina que puedan traer. Miembros de la comunidad estarán a mano para ayudar a los asistentes con cualquier problema y dar ayuda y soporte.
-        %p
-          %b
-            Talleres y tutoriales
-          \: Los talleres y tutoriales proporcionarán  a los ponentes la oportunidad de guiar a los asistentes a través de las aplicaciones, soluciones de integración y otros temas en un entrono interactivo.
-        %p
-          %b
-            Presentaciones
-          \: La
-          %i
-            carne
-          de la conferencia son las presentaciones. Sobre la base de una gran comunidad de expertos locales, regionales e internacionales discutiremos sobre los temas más actuales en la industria actual. Se esperan escuchar presentaciones honestas acerca de fortalezas y debilidades, como la ya famosa comparativa de rendimientos entre servidores de mapas.
-        %p
-          %i
-            %b
-              Birds of a Feather
-          \: Se dispondrá de salas para realizar reuniones semi-organizadas entre grupos de interés común. Algunas iniciativas importantes de la comunidad han arrancado en sesiones BoF de anteriores FOSS4G.
-        %p
-          %i
-            %b
-              Code Sprint
-          \: El fin de semana anterior al FOSS4G se ha reservado para el
-          %i
-            Hackers' Code Sprint
-          \. Los desarrolladores se encerrarán en un lugar con buen ancho de banda,
-          %i
-            Internet
-          y refrescos. (Bueno, tal vez con algo mejor que todo esto, pero no queremos desmitificar la imagen del
-          %i
-            hacker
-          ).
-        /
-          end #mainContent
-      /
-        This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats
-      %br.clearfloat
-      #footer
-        %table{ :border => "0", :width => "675" }
-          %tr
-            %td{ :colspan => "3" }
-              %h4
-                Contact Us
-          %tr
-            %td{ :width => "156" }
-              %p
-                %a{ :href => "http://www.tourhosts.com.au/" }
-                  %img{ :src => "images/thlogo.gif", :border => "0", :height => "29", :alt => "Tour Hosts", :width => "100" }
-                  %br
-                  %br
-                FOSS4G 2009 Conference Managers
-                %br
-                c/o Tour Hosts Pty Limited
-            %td{ :valign => "top", :width => "167" }
-              %p
-                %strong
-                  Postal
-                %br
-                GPO Box 128
-                %br
-                Sydney, NSW, 2001 Australia
-                %br
-                Courier
-                %br
-                Level 10 51 Druitt Street
-                %br
-                Sydney, NSW, 2001 Australia
-            %td{ :valign => "top", :width => "338" }
-              %p
-                %strong
-                  Phone and Email
-                  %br
-                Ph: + 61 2 9265 0700
-                %br
-                Fax: + 61 2 9267 5443
-                %br
-                Email:
-                %a{ :href => "mailto:foss4g2009@tourhosts.com.au" }
-                  foss4g2009@tourhosts.com.au
-          %tr
-            %td{ :colspan => "3" }
-              %p
-                %br
-                If you have experienced any difficulties with this Website then please let us
-                %a{ :href => "mailto:foss4g2009@tourhosts.com.au?Subject=FOSS4G 2009 Web Site Issue" }
-                  know
-                \.
-        /
-          end #footer
-      /
-        end #container
-    %script{ :type => "text/javascript" }
-      /
-        var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-        \//
-    %script{ :type => "text/javascript" }
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    %script{ :type => "text/javascript" }
-      try {
-      var pageTracker =   _gat._getTracker("UA-7457734-1");
-      pageTracker._trackPageview();
-      } catch(err) {}
+
+%h1
+  FOSS4G 2009 – Más que una conferencia internacional de
+  %i
+    software
+  libre geoespacial
+%p
+  La conferencia para el
+  %i
+    software
+  libre geoespacial (FOSS4G) tendrá lugar del 20 al 23 de octubre de 2009 en Sydney, Australia.
+%p
+  %a.external.free{ :href => "http://2009.foss4g.org", :title => "http://2009.foss4g.org", :rel => "nofollow" }
+    http://2009.foss4g.org
+%p
+  Más allá de las reuniones de
+  %i
+    software
+  libre regionales, la conferencia FOSS4G ha renacido en los últimos años como un lugar de reunión e intercambio de problemas y oportunidades de ámbito internacional para expertos en tecnologías geoespaciales. Con temáticas que abarcan desde la integración de sistemas basados en
+  %i
+    software
+  libre y privativo, hasta la  creación de Infraestructuras de Datos Espaciales y la aplicación de estándares OGC, la conferencia ofrece una oportunidad única para aprovechar la riqueza en conocimiento y experiencia de los desarrolladores de
+  %i
+    software
+  libre, los patrocinadores y los profesionales de todo tipo.
+%p
+  Los elementos de interés del FOSS4G 2009 incluyen:
+%p
+  %b
+    Evento de integración sobre el cambio climático
+  \: FOSS4G lanzará el evento de integración de OGC sobre el cambio climático (CCIP), que demostrará la interoperabilidad basada en estándares entre aplicaciones geoespaciales basadas en
+  %i
+    software
+  libre y privativo. Consisten en la utilización de servidores en diferentes máquinas virtuales, cada uno con aplicaciones geoespaciales ofreciendo servicios
+  %i
+    web
+  basados en estándares. Habrá muchas oportunidades para revisar los diferentes componentes IDE, y charlar directamente con los proveedores e integradores acerca de la efectividad de las diferentes tecnologías y componentes.
+%p
+  %a.external.free{ :href => "http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome", :title => "http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome", :rel => "nofollow" }
+    http://external.opengis.org/twiki_public/bin/view/ClimateChallenge2009/WebHome
+%p
+  %b
+    FOSS4G Live DVD
+  \: Se entregará a todos los asistentes un
+  %i
+    Live DVD
+  basado en el sistema operativo Xubuntu incluyendo
+  %i
+    software
+  libre geoespacial. Los usuarios podrán ejecturar el
+  %i
+    Live DVD
+  en sus computadoras y probar el
+  %i
+    software
+  sin necesidad de instalar nada en sus sistemas operativos.
+%p
+  %a.external.free{ :href => "http://wiki.osgeo.org/wiki/Live_GIS_Disc", :title => "http://wiki.osgeo.org/wiki/Live_GIS_Disc", :rel => "nofollow" }
+    http://wiki.osgeo.org/wiki/Live_GIS_Disc
+%p
+  %b
+    Fiesta de instalación
+  \: Antes de la sesión de la comida se llevará a cabo una fiesta de instalación que proporcionará a los asistentes la oportunidad de conocerse en una zona común e instalar una gran variedad de
+  %i
+    software
+  libre en sus portátiles, miniportátiles o cualquier otra máquina que puedan traer. Miembros de la comunidad estarán a mano para ayudar a los asistentes con cualquier problema y dar ayuda y soporte.
+%p
+  %b
+    Talleres y tutoriales
+  \: Los talleres y tutoriales proporcionarán  a los ponentes la oportunidad de guiar a los asistentes a través de las aplicaciones, soluciones de integración y otros temas en un entrono interactivo.
+%p
+  %b
+    Presentaciones
+  \: La
+  %i
+    carne
+  de la conferencia son las presentaciones. Sobre la base de una gran comunidad de expertos locales, regionales e internacionales discutiremos sobre los temas más actuales en la industria actual. Se esperan escuchar presentaciones honestas acerca de fortalezas y debilidades, como la ya famosa comparativa de rendimientos entre servidores de mapas.
+%p
+  %i
+    %b
+      Birds of a Feather
+  \: Se dispondrá de salas para realizar reuniones semi-organizadas entre grupos de interés común. Algunas iniciativas importantes de la comunidad han arrancado en sesiones BoF de anteriores FOSS4G.
+%p
+  %i
+    %b
+      Code Sprint
+  \: El fin de semana anterior al FOSS4G se ha reservado para el
+  %i
+    Hackers' Code Sprint
+  \. Los desarrolladores se encerrarán en un lugar con buen ancho de banda,
+  %i
+    Internet
+  y refrescos. (Bueno, tal vez con algo mejor que todo esto, pero no queremos desmitificar la imagen del
+  %i
+    hacker
+  ).
