@@ -14,9 +14,9 @@
       \.thrColElsHdr #mainContent { zoom: 1; padding-top: 15px; }
       \/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
       </style>
-      <![endif]
-    %script{ :src => "SpryAssets/SpryMenuBar.js", :type => "text/javascript" }
-    %link{ :href => "SpryAssets/SpryMenuBarVertical.css", :rel => "stylesheet", :type => "text/css" }
+      <![endif]   
+    = javascripts("SpryAssets/SpryMenuBar")   
+    = stylesheets("SpryMenuBarVertical")
   %body
     #container
       #header
