@@ -2,67 +2,64 @@
 #sidebar1
   %ul#MenuBar1.MenuBarVertical
     %li
-      %a{ :href => "index.html", :title => "Home" }
-        Home
+      = link("Home", "index.html")
     %li
-      %a{ :href => "./registration", :title => "Registration" }
-        Registration
+      = link "Registration", "registration/index.html" 
     %li
-      %a{ :href => "./sponsorship", :title => "Sponsorship" }
-        Sponsorship
+      = link "Sponsorship", "sponsorship/index.html"
     %li
-      %a{ :href => "./schedule", :title => "Programme" }
-        Programme
+      = link "Programme", "schedule/index.html", :title => "Programme"
+        
       %ul
         %li
-          %a{ :href => "./schedule" }
-            Conference Schedule
+          = link "Conference Schedule", "schedule/index.html" 
+            
         %li
-          %a{ :href => "./speakers" }
-            Speakers
+          = link "Speakers", "speakers/index.html" 
+            
         %li
-          %a{ :href => "./presentations" }
-            Presentations
+          = link "Presentations", "presentations/index.html" 
+            
         %li
-          %a{ :href => "./workshops" }
-            Workshops
+          = link "Workshops", "workshops/index.html" 
+            
         %li
-          %a{ :href => "./tutorials" }
-            Tutorials
+          = link "Tutorials", "tutorials/index.html" 
+            
         %li
-          %a{ :href => "./posters" }
-            Posters
+          = link "Posters", "posters/index.html" 
+            
         %li
-          %a{ :href => "./ccip" }
-            CCIP
+          = link "CCIP", "ccip/index.html" 
+            
         %li
-          %a{ :href => "./activities" }
-            Events & Activities
+          = link "Events & Activities", "activities/index.html" 
+            
     %li
-      %a{ :href => "./submissions" }
-        Submissions Guide
+      = link "Submissions Guide", "submissions/index.html" 
+        
     %li
-      %a{ :href => "./sydney", :title => "Sydney" }
-        Sydney
+      = link "Sydney", "sydney/index.html" 
+
       %ul
         %li
-          %a{ :href => "./venue" }
-            Venue
+          = link "Venue", "venue/index.html" 
+            
         %li
-          %a{ :href => "./accommodation" }
-            Accommodation
+          = link "Accommodation", "accommodation/index.html" 
+            
         %li
-          %a{ :href => "./general", :title => "General Information" }
-            General Information
+          = link "General Information", "general/index.html", :title => "General Information" 
+            
         %li
-          %a{ :href => "./visas", :title => "General Information" }
-            Visa Information
+          = link "Visa Information", "visas/index.html", :title => "General Information" 
+            
     %li
-      %a{ :href => "./committee", :title => "Committee" }
-        Committee
+      = link "Committee", "committee/index.html", :title => "Committee" 
+        
     %li
-      %a{ :href => "./contacts", :title => "Contacts" }
-        Contacts
+      = link "Contacts", "contacts/index.html", :title => "Contacts" 
+        
   #stayConnected
     %h3
       Stay Connected
@@ -70,14 +67,14 @@
       %tr
         %td
           %a{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
-            %img{ :src => "images/Wiki_icon.gif", :border => "0", :height => "30", :alt => "Wiki", :align => "middle", :width => "30" }
+            = img( "Wiki_icon.gif", :border => "0", :height => "30", :alt => "Wiki", :align => "middle", :width => "30" )
         %td
           %a.icontext{ :href => "http://wiki.osgeo.org/wiki/FOSS4G_2009" }
             Wiki
       %tr
         %td
           %a{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
-            %img{ :src => "images/Mail_icon.gif", :border => "0", :height => "30", :alt => "Mailing List", :align => "middle", :width => "30" }
+            = img( "Mail_icon.gif", :border => "0", :height => "30", :alt => "Mailing List", :align => "middle", :width => "30" )
         %td
           %a.icontext{ :href => "http://lists.osgeo.org/mailman/listinfo/foss4g2009/" }
             Mailing
@@ -86,14 +83,14 @@
       %tr
         %td
           %a{ :href => "http://flickr.com/FOSS4G" }
-            %img{ :src => "images/Flickr.png", :border => "0", :height => "30", :alt => "Flickr", :align => "middle", :width => "30" }
+            = img( "Flickr.png", :border => "0", :height => "30", :alt => "Flickr", :align => "middle", :width => "30") 
         %td
           %a.icontext{ :href => "http://flickr.com/FOSS4G" }
             Flickr
       %tr
         %td
           %a{ :href => "http://twitter.com/FOSS4G" }
-            %img{ :src => "images/Twitter_icon.gif", :border => "0", :height => "30", :alt => "Twitter", :align => "middle", :width => "30" }
+            = img( "Twitter_icon.gif", :border => "0", :height => "30", :alt => "Twitter", :align => "middle", :width => "30") 
         %td
           %a.icontext{ :href => "http://twitter.com/FOSS4G" }
             Twitter feed

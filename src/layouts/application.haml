@@ -5,7 +5,7 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %title
       FOSS4G 2009 Conference, Sydney 20-23 October 2009
-    %link{ :href => "layout.css", :rel => "stylesheet", :type => "text/css" }
+    = stylesheets  :layout
     /
       [if IE]>
       <style type="text/css">
@@ -21,7 +21,7 @@
     #container
       #header
         %a{ :href => "index.html" }
-          %img{ :src => "images/logo.gif", :border => "0", :height => "200", :alt => "FOSS4G", :width => "600" }
+          = img('logo.gif', :border => "0", :alt => "FOSS4G", :height => "200", :width => "600" )
         /
           end #header
       = partial('sidebar1')    
